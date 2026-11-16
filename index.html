@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkham M — Everything I love, in one place.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23635BFF'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>A</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">Arkham<span>M</span></span>
+        <span class="logo-by">by kanji</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#featured">Featured</a>
+        <a href="#movies">Movies</a>
+        <a href="#anime">Anime</a>
+        <a href="#games">Games</a>
+        <a href="#tv">TV Shows</a>
+        <a href="#music">Music</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="navbar-actions">
+        <button class="btn btn-ghost menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+        <a href="#about" class="btn btn-primary btn-sm">Say hello</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-lines"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow reveal"><span class="dot"></span> A personal entertainment universe</span>
+          <h1 class="hero-title reveal">
+            Everything I love,<br>
+            <span class="gradient-text">in one place.</span>
+          </h1>
+          <p class="hero-sub reveal">A personal collection of movies, games, anime, music and everything in between.</p>
+          <div class="hero-actions reveal">
+            <a href="#featured" class="btn btn-primary">Explore the collection</a>
+            <a href="#about" class="btn btn-outline">About me</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat"><span class="stat-num" data-count="248">0</span><span class="stat-label">Titles collected</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num" data-count="36">0</span><span class="stat-label">Favorites</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Categories</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="poster-stack">
+            <div class="poster-float pf-1" data-parallax="0.5"><div class="mini-poster mp-movie">🎬</div></div>
+            <div class="poster-float pf-2" data-parallax="0.9"><div class="mini-poster mp-game">🎮</div></div>
+            <div class="poster-float pf-3" data-parallax="0.7"><div class="mini-poster mp-anime">🌸</div></div>
+            <div class="poster-float pf-4" data-parallax="1.1"><div class="mini-poster mp-music">🎧</div></div>
+            <div class="hero-card">
+              <div class="hero-card-art">✨</div>
+              <div class="hero-card-body">
+                <span class="badge badge-accent">Featured this week</span>
+                <h3>Interstellar</h3>
+                <p>Watched 12 times · Still makes me cry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee-section" aria-label="Collection marquee">
+      <div class="marquee" id="marquee">
+        <div class="marquee-track">
+          <!-- duplicated by JS for seamless loop -->
+          <div class="marquee-group">
+            <span class="marquee-item">🎬 Movies</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">🎮 Games</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">🌸 Anime</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">📺 TV Shows</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">🎵 Music</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">🦸 Characters</span><span class="marquee-dot">●</span>
+            <span class="marquee-item">📖 Stories</span><span class="marquee-dot">●</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED COLLECTION (BENTO) ============ -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Featured Collection</span>
+          <h2>The <span class="gradient-text">essentials</span></h2>
+          <p>The pieces of entertainment that shaped who I am — one grid, every obsession.</p>
+        </div>
+        <div class="bento">
+          <article class="bento-item bento-lg reveal">
+            <div class="bento-art ba-movie">🎬</div>
+            <div class="bento-body">
+              <span class="badge">Movie of the decade</span>
+              <h3>Interstellar</h3>
+              <p>"Do not go gentle into that good night." A story about love beyond time.</p>
+              <div class="bento-meta"><span>★ 10/10</span><span>Sci-Fi</span><span>2014</span></div>
+            </div>
+          </article>
+          <article class="bento-item reveal" data-delay="100">
+            <div class="bento-art ba-game">🎮</div>
+            <div class="bento-body">
+              <span class="badge">Most played</span>
+              <h3>The Witcher 3</h3>
+              <div class="bento-meta"><span>320h</span><span>RPG</span></div>
+            </div>
+          </article>
+          <article class="bento-item reveal" data-delay="200">
+            <div class="bento-art ba-anime">🌸</div>
+            <div class="bento-body">
+              <span class="badge">Anime #1</span>
+              <h3>Steins;Gate</h3>
+              <div class="bento-meta"><span>★ 10/10</span><span>24 EP</span></div>
+            </div>
+          </article>
+          <article class="bento-item bento-wide reveal">
+            <div class="bento-art ba-music">🎧</div>
+            <div class="bento-body">
+              <span class="badge badge-accent">On repeat</span>
+              <h3>Retro Waves</h3>
+              <p>Synthwave & lo-fi playlists for every mood and every late night.</p>
+              <div class="bento-meta"><span>1,240 listens</span><span>Playlists</span></div>
+            </div>
+          </article>
+          <article class="bento-item reveal" data-delay="100">
+            <div class="bento-art ba-tv">📺</div>
+            <div class="bento-body">
+              <span class="badge">Comfort show</span>
+              <h3>Breaking Bad</h3>
+              <div class="bento-meta"><span>5 seasons</span><span>Drama</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MOVIES ============ -->
+    <section class="section" id="movies">
+      <div class="container">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <span class="section-tag">Favorite Movies</span>
+            <h2>Celluloid <span class="gradient-text">obsessions</span></h2>
+            <p>Big screens, bigger feelings. The films I never get tired of rewatching.</p>
+          </div>
+          <span class="count-chip"><span data-count="42">0</span> titles</span>
+        </div>
+        <div class="poster-grid" id="grid-movies"></div>
+      </div>
+    </section>
+
+    <!-- ============ ANIME (bento + grid) ============ -->
+    <section class="section section-alt" id="anime">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Anime Universe</span>
+          <h2>Beyond <span class="gradient-text">reality</span></h2>
+          <p>Worlds drawn by hand, felt by heart. From shonen classics to quiet slices of life.</p>
+        </div>
+        <div class="bento bento-3">
+          <article class="bento-item bento-lg reveal">
+            <div class="bento-art ba-anime2">⭐</div>
+            <div class="bento-body">
+              <span class="badge badge-accent">Hall of fame</span>
+              <h3>Fullmetal Alchemist: Brotherhood</h3>
+              <p>Equivalent exchange, and the best narrative pacing in anime history.</p>
+              <div class="bento-meta"><span>★ 10/10</span><span>64 EP</span><span>2009</span></div>
+            </div>
+          </article>
+          <article class="bento-item reveal" data-delay="150">
+            <div class="bento-art ba-sakura">🌸</div>
+            <div class="bento-body">
+              <span class="badge">Most emotional</span>
+              <h3>Your Name</h3>
+              <div class="bento-meta"><span>★ 9/10</span><span>Film</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="poster-grid poster-grid-6" id="grid-anime"></div>
+      </div>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <span class="section-tag">Games Collection</span>
+            <h2>Play, die, <span class="gradient-text">repeat</span></h2>
+            <p>Interactive worlds that consumed hundreds of hours — and were worth every one.</p>
+          </div>
+          <span class="count-chip"><span data-count="3100">0</span>+ hours</span>
+        </div>
+        <div class="poster-grid" id="grid-games"></div>
+      </div>
+    </section>
+
+    <!-- ============ TV SHOWS ============ -->
+    <section class="section section-alt" id="tv">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">TV Shows</span>
+          <h2>Series I <span class="gradient-text">binged</span></h2>
+          <p>Slow burns, plot twists and characters that feel like old friends.</p>
+        </div>
+        <div class="stacked-cards" id="stackedShows">
+          <article class="stack-card reveal">
+            <div class="stack-card-art sc-1">📺</div>
+            <div class="stack-card-body">
+              <h3>Dark</h3>
+              <p>Time travel in a German town where nothing is what it seems. Perfect plotting.</p>
+              <div class="bento-meta"><span>3 seasons</span><span>Netflix</span><span>★ 10/10</span></div>
+            </div>
+          </article>
+          <article class="stack-card reveal" data-delay="120">
+            <div class="stack-card-art sc-2">💊</div>
+            <div class="stack-card-body">
+              <h3>Breaking Bad</h3>
+              <p>The transformation of Walter White — television's greatest character arc.</p>
+              <div class="bento-meta"><span>5 seasons</span><span>AMC</span><span>★ 10/10</span></div>
+            </div>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-card-art sc-3">🐉</div>
+            <div class="stack-card-body">
+              <h3>Game of Thrones</h3>
+              <p>Politics, dragons and the most shocking episode drops of the decade.</p>
+              <div class="bento-meta"><span>8 seasons</span><span>HBO</span><span>★ 9/10</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHARACTERS (animated list) ============ -->
+    <section class="section" id="characters">
+      <div class="container">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <span class="section-tag">Favorite Characters</span>
+            <h2>The <span class="gradient-text">legends</span></h2>
+            <p>Fictional heroes, antiheroes and mentors who left a permanent mark.</p>
+          </div>
+          <span class="count-chip"><span data-count="18">0</span> legends</span>
+        </div>
+        <div class="animated-list" id="animatedList">
+          <div class="list-item reveal"><span class="list-avatar av-1">🛡️</span><div class="list-body"><strong>Joel Miller</strong><span>The Last of Us — a father when the world forgot how</span></div><span class="badge badge-accent">#1</span></div>
+          <div class="list-item reveal" data-delay="80"><span class="list-avatar av-2">🎩</span><div class="list-body"><strong>Geralt of Rivia</strong><span>The Witcher 3 — grumpy, moral, unforgettable</span></div><span class="badge">#2</span></div>
+          <div class="list-item reveal" data-delay="160"><span class="list-avatar av-3">🥷</span><div class="list-body"><strong>Itachi Uchiha</strong><span>Naruto — a sacrifice written in silence</span></div><span class="badge">#3</span></div>
+          <div class="list-item reveal" data-delay="240"><span class="list-avatar av-4">🚀</span><div class="list-body"><strong>Cooper</strong><span>Interstellar — love across dimensions</span></div><span class="badge">#4</span></div>
+          <div class="list-item reveal" data-delay="320"><span class="list-avatar av-5">🧪</span><div class="list-body"><strong>Okabe Rintarou</strong><span>Steins;Gate — the mad scientist who broke time</span></div><span class="badge">#5</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MUSIC ============ -->
+    <section class="section section-alt" id="music">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Music</span>
+          <h2>The <span class="gradient-text">soundtrack</span></h2>
+          <p>Albums and playlists that carry every chapter of my life.</p>
+        </div>
+        <div class="music-grid">
+          <article class="music-card reveal"><div class="album-art aa-1">🌊</div><div><h4>Random Access Memories</h4><p>Daft Punk · Album</p></div></article>
+          <article class="music-card reveal" data-delay="80"><div class="album-art aa-2">🌙</div><div><h4>Midnight City</h4><p>M83 · Single</p></div></article>
+          <article class="music-card reveal" data-delay="160"><div class="album-art aa-3">⚡</div><div><h4>Neon Genesis OST</h4><p>Shiro Sagisu · OST</p></div></article>
+          <article class="music-card reveal" data-delay="240"><div class="album-art aa-4">🍂</div><div><h4>Lo-fi Nights</h4><p>Playlist · 8h</p></div></article>
+          <article class="music-card reveal" data-delay="320"><div class="album-art aa-5">🛤️</div><div><h4>Hans Zimmer Collection</h4><p>Soundtracks · 4h</p></div></article>
+          <article class="music-card reveal" data-delay="400"><div class="album-art aa-6">🔥</div><div><h4>Retro Synthwave</h4><p>Playlist · 6h</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-copy reveal">
+          <span class="section-tag">About Me</span>
+          <h2>Curated by a <span class="gradient-text">professional enthusiast</span></h2>
+          <p>I've spent a lifetime collecting stories — films that changed how I see the world, games that taught me patience, anime that made me feel things I didn't know I could, and music for every version of me.</p>
+          <p>This site is my shelf of memories. Every poster here earned its place.</p>
+          <div class="hero-actions">
+            <a href="#hero" class="btn btn-primary">Back to top</a>
+            <a href="#featured" class="btn btn-outline">Re-explore</a>
+          </div>
+        </div>
+        <div class="about-card reveal" data-delay="150">
+          <div class="about-avatar">JM</div>
+          <h3>Joaquim M.</h3>
+          <p class="muted">Collector · Cinephile · Gamer · Anime fan</p>
+          <div class="about-stats">
+            <div><strong data-count="248">0</strong><span>Titles</span></div>
+            <div><strong data-count="3100">0</strong><span>Hours</span></div>
+            <div><strong data-count="12">0</strong><span>Years</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo"><span class="logo-mark">A</span><span class="logo-text">Arkham<span>M</span></span><span class="logo-by">by kanji</span></div>
+      <p>Made with 💜 and an unreasonable amount of rewatching.</p>
+      <nav class="footer-links">
+        <a href="#movies">Movies</a><a href="#anime">Anime</a><a href="#games">Games</a><a href="#tv">TV</a><a href="#music">Music</a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2026 Arkham M — a personal collection · project by kanji.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
