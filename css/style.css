@@ -74,6 +74,16 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: -.02em; line-heig
   50% { background-position: 100% center; }
 }
 
+/* ---------- CONSTELLATION CANVAS ---------- */
+#stars {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 0; pointer-events: none;
+  transition: opacity .4s ease;
+}
+[data-theme="light"] #stars { opacity: .5; }
+main, .navbar, .footer { position: relative; z-index: 1; }
+
 /* ---------- NAVBAR ---------- */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
