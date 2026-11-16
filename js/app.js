@@ -114,6 +114,18 @@ const counterObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll("[data-count]").forEach(el => counterObserver.observe(el));
 
+// ---------- THEME TOGGLE (dark default, salvo em localStorage) ----------
+const themeToggle = document.getElementById("themeToggle");
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  themeToggle.textContent = theme === "light" ? "☀️" : "🌙";
+  localStorage.setItem("arkham-theme", theme);
+}
+applyTheme(localStorage.getItem("arkham-theme") || "dark");
+themeToggle.addEventListener("click", () => {
+  applyTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
+});
+
 // ---------- NAVBAR SCROLL STATE ----------
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
